@@ -1,0 +1,153 @@
+﻿.pnlGrilla
+{
+ 
+ /*border:solid 2px red;  */
+ width:98%; 
+  margin-left :4px;
+  margin-right :4px;
+  margin-bottom :4px;
+ /*  background-color:#dfefff;*/
+  /* border:solid 2px #6699ff; */
+   border:solid 2px #00923f ;
+   
+   
+}
+.dvTituloGrilla
+{
+
+	  padding-right:10px;	
+	  height:20px;	 	  
+	  background-color:#00923f;
+	  color:White;
+	  font-weight:bold;
+	  vertical-align:middle;  	  
+	  text-align:left;
+	 font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	   
+}
+.dvOpcionesGrilla
+{
+
+	  padding-top:0px;	
+	  height:auto;
+	  color:Black;	
+	  
+}
+.ddlPaginas
+{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:xx-small;
+  line-height  :1.4em;
+}
+.Grilla
+{	
+	border: 1px solid #416271;
+    width:100%;
+	margin-right: 0px;
+}
+.FilaGrilla
+{
+  height:20px;
+  
+}
+.CabeceraGrilla
+{
+ 
+  text-align:center;
+  font-size:1.0em;
+  line-height:1.7em;
+  color:White;       
+  border-right:solid 1px white;
+  font-weight:bold ;  
+  background-color:#5791d1;       
+  border-color:Black;
+  /*position: relative; 
+  top: -1px; 
+  
+   display:none;*/
+            
+            
+}
+.CeldaGrillaCentrada
+{
+ border:solid 1px #6699ff;  
+  text-align:center;
+  
+}
+.PaginaGrilla
+{
+  /*background-color:	#507CD1	;*/
+  background-color:#5791d1;
+  color:White;
+  text-align:center;
+  
+}
+.FilaSeleccionGrilla
+{
+  background-color:#e4eef8;/* #99CCFF;*/
+  font-weight:bold;
+   height:20px;
+}
+/*PARA SELECCIONAR CON CHECK LA UNA FILA DE LA GRILLA CUANDO SE PASA EL MOUSE*/
+.CheckFilaGrilla
+{
+  background-color:#DDEEFF; /*#BBDDFF;*/ /*#D9ECFF;/*#C6E2FF;#99ccff;#edf5ff;*/
+  height:20px;
+  font-weight:bold;
+  cursor:default;
+   border-right:solid 1px blue;
+   
+}
+.CeldaGrilla
+{
+ border:solid 1px #6699ff;  
+ border-color:Black;
+}
+.Paginas
+{
+    margin:0;
+	padding:0;
+	font-size:9px;
+	font-family:tahoma;
+	color:White;	
+}
+.CeldaGrillaDerecha
+{
+ border:solid 1px #6699ff;  
+ text-align:right
+ 
+}
+.CeldaGrillaIzquierda
+{
+ border:solid 1px #6699ff;  
+ text-align:left
+
+}
+.Importes
+{
+ border: solid 1px  blue;
+ color:Red;
+ font-weight:bold;
+ font-size:15px;
+  
+}
+.OcultarColumna
+{
+ display:none;
+ 
+}
+.dvContenidoScroll
+{
+    width: 100%; 
+    overflow: auto; 
+    height:300px; 
+    white-space:nowrap;
+}
+.rpt
+{
+ width:400px; 
+ margin-left:0px; 
+ /*margin:auto;*/
+ background-color:Gray;
+}

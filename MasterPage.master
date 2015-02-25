@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ToolKit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>Página sin título</title>
+    <link href="Styles/estilos.css" rel="stylesheet" type="text/css" />	
+    <link href="Styles/ModalPopUp.css" type="text/css" rel="stylesheet" />     
+    <link href="Styles/UpdateProgress.css" type="text/css" rel="stylesheet" />
+    <link href="Styles/botones.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Grillas.css" rel="stylesheet" type="text/css" />
+    <%--<link href="Styles/Menu3.css" rel="stylesheet" type="text/css" />--%>
+        
+    <script language="javascript" type="text/javascript" src="../scripts/script.js"></script>
+    <script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>    
+    <script src="../Scripts/rangyinputs-jquery-1.1.2.min.js" type="text/javascript"></script>
+
+    </head>
+<body>
+
+
+    <form id="form1" runat="server">
+    
+    <div class="dvPrincipal">		
+		  <div class="dvLogo" >
+		  <div class="title">
+        <table width="100%" >
+                    <tr> 
+                     <td style="width:30%" align="center"  >
+                         <asp:Image ID="Image1" runat="server"  Height= "80px" Width="150px" ImageUrl="~/images/logo_empresa.png" style="margin:10px;"   />
+                              
+                    </td>
+                    <td style="width:70%">
+                            <h1>CORRELATIVOS SIEMPRESOFT</h1>
+                    </td>
+                   
+                    </tr>
+                 </table>
+
+
+          <div style="background:#0189d3; height:25px; color:White" >
+          <table border="0" cellpadding="0" cellspacing="0" width ="100%">
+		  	 <tr>
+		  	    <td>                      
+                    <table  width="100%">
+                        <tr>
+                            <td align="left">
+                      <asp:Image ID="Image4" ImageUrl="~/images/user.png" Height="12px" style="background-color:White" runat="server"  />                                         
+                     Usuario:&nbsp;<asp:LoginName ID="LoginName1" runat="server" /> &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td class="TextoCeldaDerecha">
+                            
+                                &nbsp;
+                      <asp:LoginStatus ID="lstLogin" runat="server"  CssClass="Blanco"
+                         LogoutAction="RedirectToLoginPage" onloggedout="lstLogin_LoggedOut" 
+                                    LogoutPageUrl="~/Default.aspx" onloggingout="lstLogin_LoggingOut" />
+		  	                </td>
+                        </tr>
+                    </table>
+		  	    </td>
+		  	 </tr>
+		  	 </table>
+                </div>
+                
+            </div>
+		  
+		  	
+		  </div>		  
+		<div class="dvContenidoPrincipal">		
+		 <!-- MENU DE OPCIONES -->
+		<div id="MenuNavegacion" class="MenuNavegacion">	
+             <asp:menu id="Menu1" orientation="Horizontal"   runat="server">
+                <staticmenuitemstyle backcolor="LightSkyBlue" forecolor="Black" borderstyle="Solid" borderwidth="1" bordercolor="Black"  Height="20px"  />
+                <%--<DynamicMenuStyle backcolor="LightSkyBlue" forecolor="Black" borderstyle="Solid" borderwidth="1" bordercolor="Black"  Height="20px" />--%>
+                <DynamicMenuItemStyle backcolor="LightSkyBlue" forecolor="Black" borderstyle="Solid" borderwidth="1" bordercolor="Black"  Height="20px" />
+                <%--<DynamicHoverStyle CssClass="subMenuSelect2" />
+                <DynamicMenuStyle CssClass="subMenu" BackColor="Cornsilk" />
+                <DynamicMenuItemStyle CssClass="subMenuItem" />--%>
+            </asp:menu>
+		</div>		
+
+
+
+		  <div  class="dvContenido">		    
+		  	   <asp:contentplaceholder id="cphMaster" runat="server">
+		  	   	  <div  class="dvContenido">
+		  	   	  </div>
+		  	   	</asp:contentplaceholder>  
+                    <!--VENTANA POPUP-->
+		 </div>
+		 
+		 	 <div class="dvPiePagina" >© Todos los derechos reservados - 2013 ©</div>		  			  
+		</div>          
+	   </div>	   
+    </form>
+</body>
+</html>

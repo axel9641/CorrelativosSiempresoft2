@@ -1,0 +1,54 @@
+﻿.dvMsjeError
+{
+  white-space:normal;
+  color:Red;
+  font-weight:bold;
+  width:99%;
+  height:auto;
+  border: solid 1px red;
+  background-color:#FFE7DD; /*#FFDBCE;*/
+  text-align:center;
+  padding-top: 8px;
+  margin:2px;
+}
+.dvMsjeInfo
+{
+  white-space:normal;
+  color:black;
+  font-weight:bold;
+  width:99%;
+  height:auto;
+  border: solid 1px #0066ff;
+  background-color:#DFEFFF; /*#FFDBCE;*/
+  text-align:center;
+  padding-top: 8px;
+   margin:2px;
+}
+.dvMsjeAyuda
+{
+  white-space:normal;
+  color:black;
+  font-weight:bold;
+  width:99%;
+  height:auto;
+  background-color:#FFFFDF;
+  border:1px  solid  #FF9900;    
+  text-align:center;
+  padding-top: 8px;
+   margin:2px;
+}
+.tbcIconos
+{
+ width:7%;
+vertical-align:text-top;
+ 
+ 
+}
+ .imgMsje
+{	
+  /*width:51px;
+  height:51px;
+  float:left;
+  */
+
+}
